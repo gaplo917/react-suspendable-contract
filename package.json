@@ -1,0 +1,46 @@
+{
+  "name": "react-suspendable-contract",
+  "version": "0.1.0",
+  "description": "Enjoy React Suspense for async data fetching without rewriting existing components",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "tsc",
+    "build:check": "tsc --noEmit",
+    "release": "rm -rf dist && npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gaplo917/react-suspendable.git"
+  },
+  "keywords": [
+    "react",
+    "suspense"
+  ],
+  "author": "Gary Lo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gaplo917/react-suspendable/issues"
+  },
+  "homepage": "https://github.com/gaplo917/react-suspendable#readme",
+  "peerDependencies": {
+    "react": "^16.13.1"
+  },
+  "devDependencies": {
+    "@types/react": "^16.9.49",
+    "eslint": "^7.7.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "jest": "^26.4.2",
+    "prettier": "^2.0.5",
+    "typescript": "^4.0.2"
+  }
+}
