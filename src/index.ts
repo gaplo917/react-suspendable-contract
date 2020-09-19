@@ -47,7 +47,7 @@ export const Suspendable = <T>({ data, children }: SuspendableProps<T>) => {
  */
 export function useSuspendableData<T>(
   promiseProvider: () => PromiseLike<T>,
-  deps: DependencyList | undefined,
+  deps?: DependencyList,
 ): () => T {
   if (typeof promiseProvider !== 'function') {
     throw Error('promiseProvider is not a function')
