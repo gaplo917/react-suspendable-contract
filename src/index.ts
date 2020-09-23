@@ -57,8 +57,7 @@ export function useSuspendableData<T>(
     let status = PENDING
     let error: any
     let result: T
-    const suspender = Promise.resolve()
-      .then(() => promiseProvider())
+    const suspender = Promise.resolve(promiseProvider())
       .then(r => {
         status = SUCCESS
         result = r
